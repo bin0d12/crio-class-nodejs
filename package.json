@@ -1,0 +1,27 @@
+{
+  "name": "crio-class-nodejs",
+  "version": "1.0.0",
+  "description": "crio-nodejs class",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon ../server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bin0d12/crio-class-nodejs.git"
+  },
+  "author": "binod",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bin0d12/crio-class-nodejs/issues"
+  },
+  "homepage": "https://github.com/bin0d12/crio-class-nodejs#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^3.0.1",
+    "passport": "^0.6.0",
+    "passport-jwt": "^4.0.1"
+  }
+}
