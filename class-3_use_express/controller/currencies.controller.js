@@ -1,5 +1,18 @@
 const currenciesData = require("../../currenciesData.json");
+const env = require('dotenv').config()
+const password = "binod"
+
+const verifyPwd = (req) => {
+  console.log(req.headers);
+  const {authorization} = req.headers;
+  if(authorization === password){
+    return true
+  } else {
+    return false
+  }
+}
 getCurrenciesData = (req, res) => {
+  if(!verifyPwd(req)) return res.sendStatus(403)
   res.send(currenciesData)
   const minValue = req.query.min_value;
   if (minValue) {
